@@ -11,6 +11,9 @@ console.log(sum(7,3))
 
 const fromEuroToDollar = function(valueInEuro) {
     let valueInDollar = valueInEuro * oneEuroIs.USD;
+    if (typeof valueInEuro !== 'number'){
+        return false
+    }
     return valueInDollar;
 }
 
